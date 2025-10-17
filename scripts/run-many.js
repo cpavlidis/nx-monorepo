@@ -5,7 +5,7 @@ const { execSync } = require("child_process");
 
 const args = process.argv.slice(2);
 if (args.length === 0) {
-  console.error("❌ You must provide at least one app name.\nExample: yarn run-many admin-layout user-layout");
+  console.error("❌ You must provide at least one app name.\nExample: yarn run-many project-name1 project-name2");
   process.exit(1);
 }
 
