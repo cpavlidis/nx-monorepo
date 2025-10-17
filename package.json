@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "run-single": "node scripts/run.js",
     "run-many": "node scripts/run-many.js",
     "run-all": "nx run-many -t serve -p admin-layout user-layout shared-layout"
   },
