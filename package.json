@@ -5,10 +5,13 @@
   "scripts": {
     "run-single": "node scripts/run.js",
     "run-many": "node scripts/run-many.js",
-    "run-all": "nx run-many -t serve -p admin-layout user-layout shared-layout"
+    "run-all": "nx run-many -t serve -p admin-layout user-layout shared-layout",
+    "create:nx-quasar": "node scripts/create-nx-quasar.js"
   },
   "private": true,
   "dependencies": {
+    "@quasar/extras": "^1.17.0",
+    "quasar": "^2.18.5",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
@@ -21,6 +24,7 @@
     "@nx/vue": "21.6.5",
     "@nx/web": "21.6.5",
     "@nx/workspace": "21.6.5",
+    "@quasar/vite-plugin": "^1.10.0",
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
@@ -38,6 +42,7 @@
     "nx": "21.6.5",
     "prettier": "^2.6.2",
     "sass": "^1.93.2",
+    "sass-embedded": "^1.80.2",
     "tslib": "^2.3.0",
     "typescript": "~5.9.2",
     "typescript-eslint": "^8.40.0",
